@@ -1,0 +1,146 @@
+::-moz-scrollbars-none {}
+::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	margin: 0;
+}
+
+#container {
+	margin: 24px 24px 24px 8px;
+	width: calc(100% - 32px);
+	height: calc(100% - 48px);
+	position: absolute;
+}
+
+#menuLeft {
+	position: static;
+	height: calc(100% - 2px);
+	width: 200px;
+	float: left;
+}
+
+#menuButtons {
+	height: 100%;
+	position: relative;
+	float: left;
+	top: 0;
+	width: 24px;
+}
+
+.menu {
+	font-size: 18px;
+	position: absolute;
+	left: 50%;
+}
+
+.rotateCCW90 {
+	/* Safari */
+	-webkit-transform: translateX(-50%) translateY(100%) rotate(-90deg);
+	/* Firefox */
+	-moz-transform: translateX(-50%) translateY(100%) rotate(-90deg);
+	/* IE */
+    -ms-transform: translateX(-50%) translateY(100%) rotate(-90deg);
+	/* Standard */
+	transform: translateX(-50%) translateY(100%) rotate(-90deg);
+}
+
+#marginPanelLeft {
+	height: 100%;
+	width: 175px;
+	float: left;
+	position: static;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+}
+
+#contentBorder {
+	border: 1px solid black;
+	width: calc(100% - 202px);
+	height: calc(100% - 2px);
+	position: static;
+	background-color: #ccc;
+	float: left;
+}
+
+#contentLeft, #contentRight {
+	position: static;
+	float: left;
+	width: calc(50% - 12px);
+	min-height: calc(100% - 16px);
+	background-color: #212121;
+}
+
+#contentLeft {
+	margin: 8px 4px 8px 8px;
+}
+
+#contentRight {
+	margin: 8px 8px 8px 4px;
+}
+
+.logoContainer {
+	width: 100%;
+	height: 50%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logoContainer img:hover {
+	-webkit-animation: blur 4s ease-in-out;
+    -moz-animation: blur 4s ease-in-out;
+    animation: blur 4s ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+
+#welcomeContainer {
+	width: 80%;
+	height: 50%;
+	position: relative;
+	float: bottom;
+}
+
+#welcomeText {
+	
+	float: left;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, 500%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes blur {
+	to {
+		-webkit-filter: blur(10px);
+		filter: blur(10px);
+	}
+}
+@-moz-keyframes blur {
+	to {
+		-moz-filter: blur(10px);
+		filter: blur(10px);
+	}
+}
+@keyframes blur {
+	to {
+		-webkit-filter: blur(10px);
+		-moz-filter: blur(10px);
+		filter: blur(10px);
+	}
+}
